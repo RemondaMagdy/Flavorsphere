@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666; 
+    --AliceBlue:#f0f8ff;
+    --Blue:#89cff0;
+    --whitepink:#ffd5c0;
+    --blackpink:#FF748C;
+    --black:#192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+} 
+
+ *{
+font-family:'Nunito',sans-serif ;
+margin: 0;padding: 0;
+text-decoration: none;
+outline: none;border: none;
+text-transform: capitalize;
+box-sizing: border-box;
+transition:  .2s linear;
+}
+
+html{ 
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem; 
+    scroll-behavior: smooth;
+} 
+html::-webkit-scrollbar{
+    width: 8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+ .heart-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem  3rem;
+    font-size: 1.7rem;
+    color: black;
+    background: var(--pink-color);
+    cursor: pointer;
+}
+
+.heart-btn:hover{
+    letter-spacing: .2rem;
+} 
+
+ .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem  3rem;
+    font-size: 1.7rem;
+    color: black;
+    background: var(--pink-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+} 
+
+
+header{
+    position: fixed;
+    top: 0;right: 0;left: 0;
+    background: #fff; 
+    padding: 1.5rem  7% ;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    border-bottom: var(--border);
+    height: 70px;
+}   
+
+
+header .logo{
+    color: var(--pink-color);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+} 
+
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+header .navbar a.active, 
+header .navbar a:hover  {
+    color: #fff;
+    background: var(--pink-color);
+    
+} 
+
+header  .icons  i, 
+header  .icons  a{
+    cursor: pointer; 
+    margin-left: .5rem;
+    height: 4.5rem; 
+    line-height: 4.5rem; 
+    width: 4.5rem;
+    text-align: center; 
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%; 
+    background: #eee;
+}
+
+header  .icons  i:hover, 
+header  .icons  a:hover {
+    background: var(--pink-color);
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+
+header  .icons #menu-bars{
+    display: none;
+}   
+
+ul{
+    display:flex;
+    list-style: none;
+}
+
+.dropdown{
+    display: none;
+}
+.navbar .menu{
+    position: relative;
+}
+.navbar .menu .dropdown{
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 20rem;
+    background: #fff;
+    margin-top: 1rem;
+    margin-left: -1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5);
+    justify-content: space-between;
+    
+
+}
+.navbar .dropdown li{
+    padding: 1rem;
+}
+.navbar .dropdown a{
+    font-style:unset;
+    color: black;
+    text-decoration: none;
+    
+}
+.navbar .dropdown a:hover{
+    color: #fff;
+    background: var(--pink-color);
+    
+}
+.navbar .menu:hover .dropdown{
+        display: block;
+
+} 
+
+
+header .cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0  1.5rem;
+}
+header .cart-items-container.active{
+    right: 0%;
+    
+}
+
+header .cart-items-container .cart-item{
+position: relative;
+margin: 2rem 0;
+display: flex;
+align-items: center;
+gap: 1.5rem;
+
+}
+
+header .cart-items-container .cart-item  .fa-times {
+    position: absolute;
+    top: 1rem;right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+header .cart-items-container .cart-item  .fa-times:hover {
+    color: var(--green);
+
+}
+header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+
+
+header .cart-items-container .cart-item .content h3{
+        font-size: 2rem;
+        color: var(--black);
+        padding-bottom: .5rem;
+
+}
+
+header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+} 
+
+header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+
+}  
+
+
+
+header .heart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0  1.5rem;
+}
+header .heart-items-container.active{
+    right: 0%;
+    
+}
+
+header .heart-items-container .heart-item{
+position: relative;
+margin: 2rem 0;
+display: flex;
+align-items: center;
+gap: 1.5rem;
+
+}
+
+header .heart-items-container .heart-item  .fa-times {
+    position: absolute;
+    top: 1rem;right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+header .heart-items-container .heart-item  .fa-times:hover {
+    color: var(--green);
+
+}
+header .heart-items-container .heart-item img{
+    height: 7rem;
+}
+
+
+header .heart-items-container .heart-item .content h3{
+        font-size: 2rem;
+        color: var(--black);
+        padding-bottom: .5rem;
+
+}
+
+header .heart-items-container .heart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+} 
+
+header .heart-items-container .heart-btn{
+    width: 100%;
+    text-align: center;
+
+}  
+
+
+
+
+/* media quarate */
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+}
+
+    header{
+        padding: 1.5rem  2rem;
+    }
+}
+
+@media ( max-width: 768px){
+
+    header  .icons #menu-bars{
+
+        display: inline-block;
+
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    header .navbar.active{
+        right: 0%;
+    }
+
+
+    header .navbar  ul {
+        color: var(--black);
+        display: block;
+        padding: .5rem;
+        margin: 1.5rem;
+        font-size: 2rem;
+        
+    }
+    header .navbar  li {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+}
+}

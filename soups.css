@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    --green: #27ae60;
+    --black: #192a56; 
+    --light-color: #666;
+    --AliceBlue:#f0f8ff;
+    --Blue:#89cff0;
+    --PowderBlue:#b0e0e6;
+    --BlackBlue:#87cEEB;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+} 
+*{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition:  .2s linear;
+    } 
+
+
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.soups .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,.5fr));
+    gap: 2rem;
+    
+}
+
+
+.soups .box-container .box{
+    padding: 1rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 345px;
+    
+}
+.soups .box-container .box img{
+    width:90%;
+    height: auto;
+    margin:  .5rem 0;
+}
+/* .soups .box-container .box .soup-btn {
+    color: var(--green);
+    background: #eee;
+    border-radius: 50%;
+    top: 100%;
+    right: 5rem;
+} */
+
+
+.soups .box-container .box img:hover{
+    width:100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.soups .box-container .box .fa-heart{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 3rem;width: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.soups .box-container .box .fa-heart:hover{
+    background: var(--Blue);
+    color: #fff;
+}
+
+
+.soups .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+
+.soups .box-container .box:hover .fa-heart{
+    right: .5rem;
+}
+
+
+.soups .box-container .box h5{
+    color: var(--black);
+    font-size: 1rem;
+}
+.soups .box-container .box .stars{
+    padding: 1rem  0;
+}
+
+.soups .box-container .box .stars i{
+    font-size: 1rem;
+    color: gold;
+}
+
+.soups .box-container .box span{
+    color:var(--black);
+    font-weight: bolder;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flavorsphere</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body onload="myFunction()" >
+
+  <div id="loader"> 
+    <img src="D:\CLARA\indix.htm\photos\loder.gif" >
+  </div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+<div class="home">
+    <p>Welcome to flaversphere restaurant</p>
+    <h6>Here you can find most delicious food</h6>
+    <button ><a href="#">order now</a></button>
+    <button ><a href="#">menu</a></button>
+
+
+</div>
+
+</div>
+
+
+<script>
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
+</body>
+</html>   

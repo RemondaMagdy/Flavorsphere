@@ -1,0 +1,30 @@
+*{ background-color: rgb(176, 224, 230);}
+.home{
+  
+    text-align: center;
+    padding-top: 20rem;
+    font-size: 2rem;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(3rem,1fr));
+
+}
+a:hover{
+  color: #30bff8;
+}
+#loader {
+  
+position: absolute;
+  left: 40%;
+  top: 50%;
+  z-index: 1;
+
+  margin: -5rem 0 0 -5rem;
+
+}
+
+
