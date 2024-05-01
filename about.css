@@ -1,0 +1,90 @@
+:root{
+    
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666; 
+    --AliceBlue:#f0f8ff;
+    --Blue:#89cff0;
+    --whitepink:#FEF8F3;
+    --blackpink:#FF748C;
+    --black:#192a56;
+    --second-color: rgb(219, 186, 136);
+    --light-color: #666;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+} 
+*{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition:  .2s linear;
+    } 
+
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blackpink);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.container {
+
+
+max-width: 1100px;
+margin: auto;
+
+
+}
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#ffe6e9 ;
+}
+#about .title{
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+#about h2{
+    font-size:40px ;
+    color: #da6285;
+    margin-bottom: 20px;
+}
+#about .title p{
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img{
+     width: 350px;
+}
+#about .about-content p{
+    color: #666;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.btn:hover{
+    background: #da6285;
+
+}
+.btn{
+    
+    color: antiquewhite;
+    background: #192a56;
+    margin-top: 4rem;
+}
