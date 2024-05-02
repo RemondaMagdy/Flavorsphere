@@ -69,10 +69,13 @@ html{
     color: black;
 }
 .main .cont .dishes .price{
-    background-color: white;
+    color:var(--black);
+    font-weight: bolder;
+    margin-right: 3rem;
     font-size: 1.5rem;
-    color:black;
+    display: inline;
 }
+
 
  .main .cont .dishes img:hover{
     width: 100%;
@@ -104,3 +107,4 @@ html{
 .main .cont .dishes:hover a.fa-heart{
     right: .5rem;
 }
+
