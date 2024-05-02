@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+
+
+<body>
+    <section class="order">
+        <form  action="" id= "form " onsubmit="return validateForm()" method="post">
+
+            <div class="inputbox" >
+                <div class="input">
+                 <span >Your Name:</span><br>
+                 <input type="text" placeholder="enter your name" id = "name"required><br>
+                </div>
+            
+                 <div class="input">
+                <span>Your Number:</span><br>
+                <input type="phonenumber" placeholder="enter your number" id="number" required><br><br>
+                 </div>
+            </div>    
+
+            <div class="inputbox">
+                <div class="input">
+                    <span>Your Order:</span><br>
+                    <input type="text"  placeholder="enter food name" id=" order" required><br>
+
+                </div>
+                <div class="input">
+                    <span>Additional Food:</span>
+                    <input type="text" placeholder="extra with food" id=" add"><br><br>
+                </div>
+            </div>
+            <div class="inputbox">
+                <div class="input">
+                    <span>How many orders:</span><br>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100" id=" hm"required><br>
+                </div>
+                <div class="input">
+                    <span>Date and Time:</span>
+                    <input type="datetime-local" required><br>
+                </div>
+            </div>
+            <div class="inputbox">
+                <div class="input">
+                    <span>Your address:</span>
+                   <textarea name="address" placeholder="enter your address" rows="3" cols="50" id="address" required> </textarea><br><br>
+         
+
+                </div>
+                <div class="input">
+                    <span>Your Message:</span>
+                    <textarea name="msg" placeholder="enter your message" rows="3" cols="50"> </textarea><br><br>
+                </div>
+            </div>
+
+
+            <input type="submit" value="Order Now" class="sub" >
+        </form>
+
+    </section>
+
+ <iframe src="footer.htm" width="100%" height="550rem"></iframe>
+</body>
+
+</html>
