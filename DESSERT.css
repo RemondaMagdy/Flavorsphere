@@ -1,9 +1,34 @@
-*{ background-color: rgb(176, 224, 230);}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    --green: #27ae60;
+    --black: #192a56; 
+    --light-color: #666;
+    --AliceBlue:#f0f8ff;
+    --Blue:#89cff0;
+    --PowderBlue:#b0e0e6;
+    --BlackBlue:#87cEEB;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+} 
+*{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition:  .2s linear;
+    }  
+
+
+
 html{
     font-size: 62.5%;
 }
 .main{
-    max-width: 1200px;
+    
     margin: 0 auto;
     padding: 3rem 2rem;
 }
@@ -15,28 +40,28 @@ html{
     text-align: center;
 }
 .main .cont{
-   
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit , minmax(30rem,.5fr));
+    gap: 2rem;
 }
 .main .cont .dishes{
     text-align: center;
-    /* padding: 3rem 2rem; */
-    background-color:white;
-    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
-    outline: 0.5rem solid rgb(2, 2, 9);
-    padding-bottom: 3rem;
-    /* cursor: pointer; */
+    padding: 1rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    width: 345px;
+    background-color:#fff;
+    
 }
-/* .main .cont .dishes:hover{
-    outline: 0.2rem solid rgb(103, 198, 213);
-} */
 .main .cont .dishes img{
     background-color: white;
-    padding-top: 5rem;
-    width: 30rem;
-    height: 25rem;
+    padding-top: 2rem;
+     width: 30rem; 
+    height: 25rem; 
+    
 }
 .main .cont .dishes h3{
     background-color: white;
@@ -48,12 +73,34 @@ html{
     font-size: 1.5rem;
     color:black;
 }
-.main .cont .dishes a{
-   text-decoration: none;
-   color: black;
 
-}
-.main .cont .dishes a:hover{
-    color: #30bff8;
- 
+ .main .cont .dishes img:hover{
+    width: 100%;
+    margin: 1rem 0;
  }
+
+ .main .cont .dishes a.fa-heart {
+    position: absolute;
+    top: 2.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.main .cont .dishes a.fa-heart:hover{
+    background: var(--Blue);
+    color: #fff;
+}
+
+
+.main .cont .dishes a.fa-heart{
+    right: -15rem;
+}
+
+
+.main .cont .dishes:hover a.fa-heart{
+    right: .5rem;
+}
