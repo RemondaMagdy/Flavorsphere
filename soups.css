@@ -21,18 +21,26 @@
     box-sizing: border-box;
     transition:  .2s linear;
     } 
-
+html{
+    font-size: 62.5%;
+}
+.soups{
+    margin: 0 auto;
+   padding: 3rem 2rem;
+}
 
 .sub-heading{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: var(--black);
-    padding-top: 1rem;
+    padding-top: 10rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
     padding-bottom: 1rem;
 }
 .soups .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(22rem,.5fr));
+    grid-template-columns: repeat(auto-fit,minmax(30rem,.5fr));
     gap: 2rem;
     
 }
@@ -72,12 +80,12 @@
 
 .soups .box-container .box .fa-heart{
     position: absolute;
-    top: 1.5rem;
+    top: 1rem;
     background: #eee;
     border-radius: 50%;
-    height: 3rem;width: 3rem;
-    line-height: 3rem;
-    font-size: 1.5rem;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
     color: var(--black);
 }
 
@@ -90,16 +98,14 @@
 .soups .box-container .box .fa-heart{
     right: -15rem;
 }
-
-
 .soups .box-container .box:hover .fa-heart{
     right: .5rem;
-}
+} 
 
 
-.soups .box-container .box h5{
+.soups .box-container .box h3{
     color: var(--black);
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .soups .box-container .box .stars{
     padding: 1rem  0;
@@ -113,6 +119,6 @@
 .soups .box-container .box span{
     color:var(--black);
     font-weight: bolder;
-    margin-right: 3rem;
-    font-size: 1.5rem;
+    margin-right: 5rem;
+    font-size: 2rem;
 }
