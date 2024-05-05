@@ -29,10 +29,12 @@ html{
 }
 .main{
     
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 3rem 2rem;
+    
 }
 .main .title{
+    padding-top: 10rem;
     font-size: 3.5rem;
     color: rgb(14, 17, 16);
     margin-bottom: 3rem;
@@ -77,6 +79,8 @@ html{
 }
 
 
+
+
  .main .cont .dishes img:hover{
     width: 100%;
     margin: 1rem 0;
@@ -107,4 +111,5 @@ html{
 .main .cont .dishes:hover a.fa-heart{
     right: .5rem;
 }
+
 
