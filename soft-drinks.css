@@ -29,9 +29,9 @@
 
 .sub-heading{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: var(--blackpink);
-    padding-top: 1rem;
+    padding-top: 10rem;
     padding-bottom:0rem;
 }
 .heading{
@@ -41,7 +41,7 @@ margin: .5rem 0;
 
 .softdrinks .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem,.5fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem,.5fr));
     gap: 2rem;
 }
 .softdrinks .box-container .box{
@@ -54,6 +54,7 @@ margin: .5rem 0;
     overflow: hidden;
     text-align: center;
     margin: 0 .5rem;
+   
 }
 .softdrinks .box-container .box img {
     width:90%;
@@ -72,9 +73,9 @@ margin: .5rem 0;
     top: 1.5rem;
     background: #eee;
     border-radius: 50%;
-    height: 3rem;width: 3rem;
-    line-height: 3rem;
-    font-size: 1.5rem;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
     color: var(--black);
 }
 
@@ -86,11 +87,13 @@ margin: .5rem 0;
 
 .softdrinks .box-container .box .fa-heart{
     right: -15rem;
+    
 }
 
 
 .softdrinks .box-container .box:hover .fa-heart{
     right: .5rem;
+    
 }
 
 /* .softdrinks .box-container .box .h3{
@@ -106,12 +109,13 @@ margin: .5rem 0;
 } */
 .softdrinks .box-container .box  h3{
     color: var(--black); 
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .softdrinks .box-container .box  .price{
     color: var(--black);
-    margin-right: 3rem;
-    font-size: 1.5rem;
+    margin-right: 5rem;
+    font-size: 2rem;
+    color: black;
 }
 
 
