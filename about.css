@@ -1,4 +1,4 @@
-:root{
+  :root{
     
     --green: #27ae60;
     --black: #192a56;
@@ -31,7 +31,7 @@
     text-align: center;
     font-size: 2rem;
     color: var(--blackpink);
-    padding-top: 1rem;
+    padding-top: 15rem;
     padding-bottom: 1rem;
 }
 .container {
@@ -70,13 +70,15 @@ margin: auto;
     justify-content: space-between;
 }
 #about .about-content img{
-     width: 350px;
+     width: 325px;
+     
 }
-#about .about-content p{
-    color: #666;
+#about .about-content h3{
+    color: var(--black);
     margin-right: 7rem;
     font-weight: 500;
     line-height: 1.6;
+    font-size: 1.5rem;
 }
 .btn:hover{
     background: #da6285 ;
@@ -87,7 +89,7 @@ margin: auto;
     color: antiquewhite;
     background: #192a56;
     margin-top: .5rem;
-    width: 9rem;
+    width: 20rem;
     text-align: center;
     border-radius: 1rem;
     padding: .5rem 1rem;
