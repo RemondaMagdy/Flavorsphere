@@ -5,8 +5,125 @@
     <title>Appetizers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./appetizers.css">
+    <link rel="stylesheet" href="header.css">
  </head>
-    <iframe src="header.html" width="100%" height="400px"></iframe>
+
+
+
+
+
+<!-- header start -->
+<header>
+
+    <a href="#Home" class="logo"><img src="./imgs/icons8-restaurant-100.png" alt="logo"></i>Flavorsphere</a>
+    
+    <nav class="navbar">
+        <ul class="main">
+        <li><a class="active"href="./home.html">Home</a></li>
+    
+        <li class="menu"><a href="./menu.html">Menu<i class="fas fa-caret-down"></i></a>
+              
+            <ul class="dropdown">
+            <li><a href="./main_dishs.html">Main Dishes</a></li>
+            <li><a href="./soups.html">Soups</a></li>
+            <li><a href="./Salads.html">Salads</a></li>
+            <li><a href="./appetizers.html">Appetiszers</a></li>
+            <li><a href="./DESSERT.htm">Dessert</a></li>
+            <li><a href="./soft-drinks.html">Soft Drinks</a></li>
+            <li><a href="./Hot Drinks.html">Hot Drinks</a></li>
+        </ul>   
+        </li>
+        <li> <a href="./offer1.html">offers</a></li>
+        <li> <a href="./About.html">About</a></li>
+        <li> <a href="./review">review</a></li>
+        <li><a href="./connect">connect</a> </li>
+        </ul>
+    </nav>
+    
+    
+    <div class="icons">
+          <i class="fas fa-search" id="search-icon"></i>
+          <a href="#cart" class="fas fa-shopping-cart" id="cart-btn"></a>
+          <a href="#heart" class="fas fa-heart" id="heart-btn" ></a>
+          <i class="fas fa-bars"  id="menu-bars"></i>
+    </div>
+    
+    
+      <div class="cart-items-container">
+      <div class="cart-item">
+      <span class="fas fa-times" ></span>
+      <img src="./imgs/img-item-1.jpg" alt="">
+      <div class="content">
+      <h3>cart-item 01</h3>
+      <div class="price">$15.99/-</div>
+          </div>
+        </div>
+    
+      <div class="cart-item">
+      <span class="fas fa-times"></span>
+      <img src="./imgs/img-item-2.jpg" alt="">
+      <div class="content">
+      <h3>cart-item 02</h3>
+      <div class="price">$21.99/-</div>
+          </div>
+        </div>
+    
+      <div class="cart-item">
+      <span class="fas fa-times"></span>
+      <img src="./imgs/img-item-3.jpg" alt="" >
+      <div class="content">
+      <h3>cart-item 03</h3>
+      <div class="price">$29.99/-</div>
+          </div>
+        </div>
+        <a href="./order.html" class="btn" id="checkout-btn">Checkout Now</a>
+    </div>  
+    
+    
+    
+    
+    <div class="heart-items-container">
+        <div class="heart-item" >
+          <span class="fas fa-times"></span>
+          <img src="./imgs/img-item-1.jpg" alt="">
+          <div class="content">
+            <h3>cart-item 01</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+    
+        <div class="heart-item" id="love2">
+          <span class="fas fa-times"></span>
+          <img src="./imgs/img-item-2.jpg" alt="">
+          <div class="content">
+            <h3>cart-item 02</h3>
+            <div class="price">$21.99/-</div>
+          </div>
+        </div>
+    
+        <div class="heart-item" id="love3">
+          <span class="fas fa-times"></span>
+          <img src="./imgs/img-item-3.jpg" alt="" >
+          <div class="content">
+            <h3>cart-item 03</h3>
+            <div class="price">$29.99/-</div>
+          </div>
+        </div>
+        <a href="#cart" class="heart-btn" id="Add To Cart">Add To Cart</a>
+    </div>  
+    
+    
+    </header>
+    
+    <!-- header ends -->
+    
+    <script  src="./header.js"></script>
+
+
+
+
+
+    <!-- menu-section -->
 <div class="Appetizers">
     <h3 class="sub-heading">Appetizers</h3>
 <div class="box-container">
@@ -39,28 +156,28 @@
     <span class ="price">200EGP</span>
     <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
 </div>
-<div class="box">
+<div class="box" >
     <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
     <img src="./imgs/Garlic Shrimp Crostini with Avocado.jpg" >
     <h5>Garlic Shrimp Crostini with Avocado</h5>
     <span class ="price">300EGP</span>
     <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
 </div>
-<div class="box">
+<div class="box" >
     <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
     <img src="./imgs/Mini Potato Skins.jpg" >
     <h5>Mini Potato Skins</h5>
     <span class ="price">250EGP</span>
     <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
 </div>
-<div class="box">
+<div class="box" >
     <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
     <img src="./imgs/Pomegranate Goat Cheese Bites.jpg" >
     <h5>Pomegranate Goat Cheese Bites</h5>
     <span class ="price">200EGP</span>
     <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
 </div>
-<div class="box">
+<div class="box" >
     <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
     <img src="./imgs/Smoked Salmon Blinis.jpg" >
     <h5>Smoked Salmon Blinis</h5>
