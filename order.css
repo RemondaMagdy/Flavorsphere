@@ -12,7 +12,7 @@
 .order form .inputbox{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly ;
+    justify-content: space-evenly ;
    
 
 }
@@ -24,11 +24,11 @@
 }
 .order form .inputbox .input .span{
     padding: 30px 10px;
-    font-size: 40%;
+    font-size: 20%;
 
 
 }
-.order form .inputbox .input .input,
+/*.order form .inputbox .input .input,*/
 .order form .inputbox .input .textarea{
     background: #f8f8f8 ;
     border-radius: 10px;
@@ -50,3 +50,8 @@
     background-color: #ffe6e9;
     font-size: 15px;
 }
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
