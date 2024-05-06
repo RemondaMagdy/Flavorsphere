@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search bar</title>
+    <link rel="stylesheet" href="searchBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search" id="myinput" oninput="myfunction()">
+        <ul id="myUL"> 
+            <li> <a href="#">cook</a></li>
+            <li> <a href="#">foog</a></li>
+            <li> <a href="#">oooo</a></li>
+            <li> <a href="#">coo</a></li>
+            
+        </ul>
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    <script>
+        function myfunction() {
+            var input , filter , ul, li, a,i,txtvalue;
+            input = document.getElementById('myinput');
+            filter=input.value.toUpperCase();
+            ul=document.getElementById("myUL");
+            li=ul.getElementsByTagName("li");
+            for(i=0;i<li.length;i++){
+                a=li[i].getElementsByTagName("a")[0];
+                txtvalue= a.textContent|| a.innerText;
+                if ( filter&& txtvalue.toUpperCase().indexOf(filter)>-1){
+                    li[i].style.display="";
+                } else {
+                    li[i].style.display="none";
+                }
+            }
+
+
+
+        } myfunction()
+
+
+
+
+    </script>
+    
+</body>
+</html>

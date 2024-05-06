@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 0.625rem;
+    font-size: 1.063rem;
+    border: 0.063 solid green;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  #myUL{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 0.625rem;
+    background: #2196F3;
+    color: white;
+    font-size: 1.063rem;
+    border: 0.063rem solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  #myUL li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

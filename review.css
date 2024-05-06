@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666; 
+    --AliceBlue:#f0f8ff;
+    --Blue:#89cff0;
+    --whitepink:#FEF8F3;
+    --blackpink:#FF748C;
+    --black:#192a56;
+    --second-color: rgb(219, 186, 136);
+    --light-color: #666;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+} 
+*{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition:  .2s linear;
+    }
+    .review{
+        padding: 50px 0;
+    } 
+
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blackpink);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    
+    
+}
+    
+
+
+
+.review .box-container .box{
+    padding: 1rem;
+    background: var(--whitepink);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+
+.review .box-container .box img{
+    width:85%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: .5rem 0;
+    margin-bottom: 1rem;
+}
+
+.review .box-container .box img:hover{
+    width:100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:  1rem 0;
+
+}
+
+
+.review .box-container .box h5{
+    color: var(--black);
+    font-size: 1rem;
+}
+
+
+.review .box-container .box .stars{
+    padding: 1rem  0;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1rem;
+    color: rgba(239, 206, 18, 0.716);
+}
+
+
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    top: 1.5rem;
+    background: var(--pink-opacity);
+    border-radius: 50%;
+    height: 3rem;width: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.review .box-container .box .fa-quote-right:hover{
+    background: var(--pink-color);
+    color: #fff;
+}
+
+
+.review .box-container.box  .fa-quote-right{
+    right: -15rem;
+}
+.review .box-container .box:hover .fa-quote-right{
+    right: .5rem;
+}
+
+
+
+.review .box-container .box p{
+    font-size: 0.9938rem;
+
+}
+.review .box-container .box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.review .box-container .box:hover {
+    background: var(--second-color);
+    transition: 0.2s all linear;
+}
+
+
+
+
+
+
+
+
+
+
+

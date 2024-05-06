@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666; 
+    --AliceBlue:#f0f8ff;
+    --Blue:#89cff0;
+    --whitepink:#FEF8F3;
+    --blackpink:#FF748C;
+    --black:#192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
+    --white-alpha-40:rgba(255,255,255,0.40);
+    --white-alpha-25:rgba(255,255,255,0.25);
+} 
+*{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition:  .2s linear;
+    } 
+
+
+
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blackpink);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.drinks .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,.5fr));
+    gap: 2rem;
+    
+}
+
+
+.drinks .box-container .box{
+    padding: 1rem;
+    background: var(--whitepink);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 345px;
+    
+}
+.drinks .box-container .box img{
+    width:90%;
+    height: auto;
+    margin:  .5rem 0;
+}
+
+
+.drinks .box-container .box img:hover{
+    width:100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.drinks .box-container .box .fa-heart{
+    position: absolute;
+    top: 1.5rem;
+    background: var(--pink-opacity);
+    border-radius: 50%;
+    height: 3rem;width: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.drinks .box-container .box .fa-heart:hover{
+    background: var(--pink-color);
+    color: #fff;
+}
+
+
+.drinks .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+
+.drinks .box-container .box:hover .fa-heart{
+    right: .5rem;
+}
+
+
+.drinks .box-container .box h5{
+    color: var(--black);
+    font-size: 1rem;
+}
+
+
+.drinks .box-container .box span{
+    color:var(--black);
+    font-weight: bolder;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+}
