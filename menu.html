@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu-section soups</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./menu.css">
+<link rel="stylesheet" href="./header.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- menu section starts -->
+
+
+
+<!-- header start -->
+<header>
+
+  <a href="#Home" class="logo"><img src="./imgs/icons8-restaurant-100.png" alt="logo"></i>Flavorsphere</a>
+  
+  <nav class="navbar">
+      <ul class="main">
+      <li><a class="active" href="./home.htm">Home</a></li>
+  
+      <li class="menu"><a href="./menu.html">Menu<i class="fas fa-caret-down"></i></a>
+            
+          <ul class="dropdown">
+          <li><a href="./main_dishs.html">Main Dishes</a></li>
+          <li><a href="./soups.html">Soups</a></li>
+          <li><a href="./photoOFsalad.html">Salads</a></li>
+          <li><a href="./appetizers.html">Appetiszers</a></li>
+          <li><a href="./DESSERT.htm">Dessert</a></li>
+          <li><a href="./soft-drinks.html">Soft Drinks</a></li>
+          <li><a href="./hot-drinks.html">Hot Drinks</a></li>
+      </ul>   
+      </li>
+      <li> <a href="./offer1.html">offers</a></li>
+      <li> <a href="./About.html">About</a></li>
+      <li> <a href="./review.html">review</a></li>
+      <li><a href="./sign.htm">connect</a> </li>
+      </ul>
+  </nav>
+  
+  
+  <div class="icons">
+       <a href="./searchBar.html"><i class="fas fa-search" id="search-icon"></i></a>
+        <a href="#cart" class="fas fa-shopping-cart" id="cart-btn"></a>
+        <a href="#heart" class="fas fa-heart" id="heart-btn" ></a>
+        <i class="fas fa-bars"  id="menu-bars"></i>
+        <i class="fas fa-sun" id="white-mood"></i>
+  </div>
+  
+  
+    <div class="cart-items-container">
+    <div class="cart-item">
+    <span class="fas fa-times" ></span>
+    <img src="./imgs/img-item-1.jpg" alt="">
+    <div class="content">
+    <h3>cart-item 01</h3>
+    <div class="price">120 EGP/-</div>
+        </div>
+      </div>
+  
+    <div class="cart-item">
+    <span class="fas fa-times"></span>
+    <img src="./imgs/img-item-2.jpg" alt="">
+    <div class="content">
+    <h3>cart-item 02</h3>
+    <div class="price">120 EGP/-</div>
+        </div>
+      </div>
+  
+    <div class="cart-item">
+    <span class="fas fa-times"></span>
+    <img src="./imgs/img-item-3.jpg" alt="" >
+    <div class="content">
+    <h3>cart-item 03</h3>
+    <div class="price">120 EGP/-</div>
+        </div>
+      </div>
+      <a href="./order section.html" class="btn" id="checkout-btn">Checkout Now</a>
+  </div>  
+  
+  
+  
+  
+  <div class="heart-items-container">
+      <div class="heart-item" >
+        <span class="fas fa-times"></span>
+        <img src="./imgs/img-item-1.jpg" alt="">
+        <div class="content">
+          <h3>cart-item 01</h3>
+          <div class="price">120 EGP/-</div>
+        </div>
+      </div>
+  
+      <div class="heart-item" id="love2">
+        <span class="fas fa-times"></span>
+        <img src="./imgs/img-item-2.jpg" alt="">
+        <div class="content">
+          <h3>cart-item 02</h3>
+          <div class="price">120 EGP/-</div>
+        </div>
+      </div>
+  
+      <div class="heart-item" id="love3">
+        <span class="fas fa-times"></span>
+        <img src="./imgs/img-item-3.jpg" alt="" >
+        <div class="content">
+          <h3>cart-item 03</h3>
+          <div class="price">$29.99/-</div>
+        </div>
+      </div>
+      <a href="#cart" class="heart-btn" id="Add To Cart">Add To Cart</a>
+  </div>  
+  
+  
+  </header>
+  
+  <!-- header ends -->
+  
+  <script  src="./header.js" defer></script>
+   
+
+
+
+<section class="menu-section" id="menu">
+    <h3 class="sub-heading">full menu</h3>
+    <div class="box-container">
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+    <a href="#soup-description" > <img src="./imgs/soup-1.jpg" alt="soup item"></a>
+
+        <h3>French onion soup</h3>
+        
+        <span>120 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-2.jpg" alt="soup item" > </a>
+        <h3>creamy mushroom soup</h3>
+        <span>150 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-3.jpg" alt="soup item" > </a>
+        <h3> vegetable soup with meat</h3>
+        <span>100 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-4.jpg" alt="soup item" > </a>
+        <h3>creamy lentils soup</h3>
+        <span>80 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-5.jpg" alt="soup item" > </a>
+        <h3>vegen vegetable soup</h3>
+        
+        <span>80 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-6.jpg" alt="soup item" > </a>
+        <h3>creamy Bessara soup</h3>
+        
+        <span>90 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-7.jpg" alt="soup item" > </a>
+        <h3>creamy Pumpkin soup</h3>
+        
+        <span>120 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-8.jpg" alt="soup item" > </a>
+        <h3>fresh seafood soup</h3>
+        
+        <span>200 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="imgs/soup-9.jpg" alt="soup item" > </a>
+        <h3>Creamy Shrimp Soup</h3>
+    
+        <span>250 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+    
+
+    <div class="box">
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <a href="#soup-description"> <img src="./imgs/soup-10.jpg" alt="soup item" > </a>
+        <h3> fresh Tomato soup</h3>
+        
+        <span>120 EGP</span>
+        <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+    </div>
+    <div class="box" >
+        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+        <img src= "./imgs/dessert1.jpg">
+        <h3>Cherry cream cheese cake</h3>
+          <span>150 EGP</span>
+          <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+          <img src="./imgs/dessert2.jpg" >
+          <h3>Chocolate cake</h3>
+            <span>120 EGP</span>
+            <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+          </div>
+
+          <div class="box" >
+            <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+            <img src="./imgs/dessert3.jpg" >
+            <h3>Doughnuts
+            </h3>
+              <span>100 EGP</span>
+              <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+            </div>
+
+            <div class="box" >
+              <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+              <img src="./imgs/dessert4.jpg" >
+              <h3>Cream caremal</h3>
+                <span>200 EGP</span>
+                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+              </div>
+
+              <div class="box" >
+                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                <img src="./imgs/dessert5.jpeg" >
+                <h3>Triamisu</h3>
+                <span>200 EGP</span>
+                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                </div>
+
+                <div class="box" >
+                  <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                  <img src="./imgs/dessert6.jpeg" >
+                  <h3>Churros</h3>
+                  <span>150 EGP</span>
+                  <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                  </div>
+
+                  <div class="box" >
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/dessert7.jpeg" >
+                    <h3>Strawberry truffle</h3>
+                    <span>250 EGP</span>
+                    <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                    </div>
+
+                    <div class="box" >
+                      <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                      <img src="./imgs/dessert8.jpeg" >
+                      <h3>Cookies</h3>
+                      <span>50 EGP</span>
+                      <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                      </div>
+
+                      <div class="box">
+                        <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                        <img src="./imgs/dessert9.jpeg" >
+                        <h3>Eclair</h3>
+                        <span>200 EGP</span>
+                        <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                        </div>
+
+                        <div class="box" >
+                          <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                          <img src="./imgs/dessert10.jpeg" >
+                          <h3>Chocolate mousse</h3>
+                          <span>250 EGP</span>
+                          <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                          </div>
+                           
+                          <div class="box" >
+                            <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                            <img src="./imgs/dessert11.jpeg" >
+                            <h3>Rose and vinllia jelly tart</h3>
+                            <span>300 EGP</span>
+                            <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                            </div>
+
+                            <div class="box" >
+                              <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                              <img src="./imgs/dessert12.jpeg" >
+                              <h3>Apple pie</h3>
+                              <span>150 EGP</span>
+                              <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                              </div>
+
+                               <div class="box" >
+                              <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                  <img src="./imgs/dessert13.jpeg" >
+                  <h3>Hony cake</h3>
+                  <span>150 EGP</span>
+                  <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                  </div>
+
+               
+                  <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="imgs/Mahshi.jfif" alt="Stuffed Grape Leaves">
+                    <h3>Stuffed Grape Leaves</h3>
+                    <span>190 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/Poulet basquaise.jpg" alt="Poulet basquaise">
+                    <h3>Poulet basquaise</h3>
+                    <span>200 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/Raclette الراكليت.jpg" alt="Raclette">
+                    <h3>Raclette</h3>
+                    <span>205 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/9d875a80-92eb-4ae7-818c-37a754664905.jpg" alt="Bœuf bourguignon">
+                    <h3>Bœuf bourguignon</h3>
+                    <span>210 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/رغيف لحم.jfif" alt="Meatloaf">
+                    <h3>Meatloaf</h3>
+                    <span>220 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/1.jpg" alt="bakedpotatoeswithmeatballs">
+                    <h3>Baked Potatoes with meatballs</h3>
+                    <span>225 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="./imgs/كولورجونيس.avif" alt="Corelness">
+                    <h3>Corelness</h3>
+                    <span>230 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="imgs/همبرجر.jfif" alt="Hamburger">
+                    <h3>Hamburger</h3>
+                    <span>235 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                    <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                    <img src="imgs/لازانيا.avif" alt="lasagna">
+                    <h3>lasagna</h3>
+                    <span>240 EGP</span>
+                    <a href="#cart" class="cart-btn">Add To Cart</a>
+                </div>
+                <div class="box">
+                  <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                      <img src="./imgs/ice-choclete.jpeg" alt="ice choclate">
+                      <h3>ice chocolate</h3>
+                      <span class="price">60 EGP</span>
+                      <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                  </div>
+  
+                  <div class="box">
+                      <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                          <img src="./imgs/boba-tea.jpeg" alt="boba tea">
+                          <h3>BoBa tea</h3>
+                          <span class="price">70 EGP</span>
+                          <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+      
+                      </div>
+                      <div class="box">
+                          
+                              <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                              <img src="./imgs/ice-coffe.jpeg" alt="ice coffe">
+                              <h3>ice coffe</h3>
+                              <span class="price">50 EGP</span>
+                              <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                          </div>
+  
+                          <div class="box">
+                              <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                  <img src="./imgs/orange.juise.jpeg" alt="orange">
+                                  <h3>orange juice</h3>
+                                  <span class="price">30 EGP</span>
+                                  <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                              </div>
+  
+                              <div class="box">
+                                  <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                      <img src="./imgs/mango.juise.jpeg" alt="mango">
+                                      <h3>mango juice</h3>
+                                      <span class="price">35 EGP</span>
+                                      <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                                  </div>
+  
+                                  <div class="box">
+                                      
+                                          <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                          <img src="./imgs/sunday.jpeg" alt="sun day">
+                                          <h3>sun day</h3>
+                                          <span class="price">40 EGP</span>
+                                          <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                                      </div>
+  
+                                      <div class="box">
+                                          <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                              <img src="./imgs/milkshake.jpeg" alt="milkshake"> 
+                                              <h3>milkshake</h3>
+                                              <span class="price">70 EGP</span>
+                                              <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                          
+                                          </div>
+  
+                                          <div class="box">
+                                                  <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                  <img src="./imgs/freash juice.jpg" alt="pineapple juice">
+                                                  <h3>pineapple juice</h3>
+                                                  <span class="price">30 EGP</span>
+                                                  <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                              
+                                              </div>
+  
+                                          <div class="box">
+                                                  <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                  <img src="./imgs/cola.jpg" alt="cola">
+                                                  <h3> iced cola</h3>
+                                                  <span class="price">20 EGP</span>
+                                                  <a href="#cart" class="cart-btn" id="Add-To-Cart">Add To Cart</a>
+                              
+                                              </div>
+                                              <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                            <a href="#drinks-description" > <img src="./imgs/Mocha.jpg" alt="drinks item"></a>
+                                        
+                                                <h3>Mocha</h3>
+                                                <span>10.99$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                        
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src=".//imgs/Hot Cocoa With Marshmallows.jpg" alt="drinks item" > </a>
+                                                <h3>Hot Cocoa With Marshmallows</h3>
+                                                <span>17.25$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Homemade London Fog Tea Latte  8-oz strong Earl….jpg" alt="drinks item" > </a>
+                                                <h3>Homemade London Fog Tea Latte  </h3>
+                                                <span>19.99$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Sahlep, Salep, Sahlab Recipe  - Food_com.jpg" alt="drinks item" > </a>
+                                                <h3>Sahlep</h3>
+                                                <span>5.99$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/S_mores Hot Chocolate + Charity Water E-Cookbook.jpg" alt="drinks item" > </a>
+                                                <h3>S'mores Hot Chocolate + Charity Water E-Cookbook</h3>
+                                                <span>19.99$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Rich Italian Hot Chocolate _ Cleobuttera _ Recipe….jpg" alt="drinks item" > </a>
+                                                <h3>Rich Italian Hot Chocolate </h3>
+                                                <span>16.45$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Mulled pear cider - Hot Mulled pear cider drink.jpg" alt="drinks item" > </a>
+                                                <h3> Mulled pear cider </h3>
+                                                <span>2.00$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Masala Chai Tea {Karak Chai Tea}.jpg" alt="drinks item" > </a>
+                                                <h3>Masala Chai Tea {Karak Chai Tea}</h3>
+                                                <span>10.00$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/London Fog (Earl Grey Tea Latte).jpg" alt="drinks item" > </a>
+                                                <h3>Earl Grey Tea Latte</h3>
+                                                <span>13.25$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Bloody Red Velvet Hot Chocolate.jpg" alt="drinks item" > </a>
+                                                <h3>Bloody Red Velvet Hot Chocolate</h3>
+                                                <span>25.25$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Cinnamon And Honey For Weight Loss – How It Works, Benefits, And Side Effects.jpg" alt="drinks item" > </a>
+                                                <h3>Cinnamon And Honey For Weight Loss </h3>
+                                                <span>5.5$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Coffee Jelly.jpg" alt="drinks item" > </a>
+                                                <h3>Coffee Jelly</h3>
+                                                <span>10.00$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Cozy Triple Chocolate Hot Cocoa Recipe - SoFabFood.jpg" alt="drinks item" > </a>
+                                                <h3>Cozy Triple Chocolate Hot Cocoa</h3>
+                                                <span>88.90$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Creamy Cashew Gingersnap Lattes {vegan}.jpg" alt="drinks item" > </a>
+                                                <h3>Creamy Cashew Gingersnap Lattes {vegan}</h3>
+                                                <span>18.5$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/Easy Biscoff Hot Chocolate Recipe.jpg" alt="drinks item" > </a>
+                                                <h3>Biscoff Hot Chocolate </h3>
+                                                <span>13.25$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            
+                                        
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/HOW TO MAKE THE BEST TIRAMISU LATTE COFFEE RECIPE.jpg" alt="drinks item" > </a>
+                                                <h3>TIRAMISU LATTE COFFEE </h3>
+                                                <span>19.99$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                            <div class="box">
+                                                <a href="#heart" class="fas fa-heart" id="heart-btn"></a>
+                                                <a href="#drinks-description"> <img src="./imgs/French Hot Chocolate (Le Chocolat Chaud).jpg" alt="drinks item" > </a>
+                                                <h3>French Hot Chocolate </h3>
+                                                <span>9.99$</span>
+                                                <a href="#cart" class="cart-btn" id="Add To Cart">Add To Cart</a>
+                                            </div>
+                                        
+                                        
+
+
+
+
+
+    
+
+</div>
+</section>
+
+
+
+
+<!-- footer section start -->
+<div class="box-container-footer">
+    <div class="box">
+       <h3>Menu</h3>
+       <p>SOUPS</p>
+       <p>APPETISZERS</p>
+       <p>SALADS</p>
+       <p>DESSERT</p>
+       <p>MAIN DISHES</p>
+       <p>SOFT DRINKS</p>
+       <p>HOT DRINKS</p>
+       
+ </li>
+    </div>
+    <div class="box">
+       <div class="main">
+         <h3>Quick links</h3>
+         <p>HOME</p> 
+         <p>MENU</p> 
+         <p>ABOUT US</p> 
+         <p>CONNECT</p> 
+         <p>REVIEW</p> 
+       </div>
+  </div>
+  <div class="box">
+     <h3>countant info</h3>
+     <p href="#">+0201222225568</p>
+     <p>flaversphere@mail.com</p>
+     <p>30 st.helliobles maser algdida cairo</p>
+ 
+  </div>
+  <div class="box1">
+    <h3>follow us</h3>
+    
+    <a href="https://www.facebook.com/profile.php?id=61558409711756&mibextid=ZbWKwL"><i class="fa fa-facebook-square"  style="font: size 5rem;"></i>facebook</a>
+    <a href="https://www.instagram.com/flaversphere?igsh=N2dtb25xdTdxdWZ3"><i class="fa fa-instagram" style="font: size 5rem;" ></i>instgram</a>
+    <a href="https://x.com/flaversphe18305/status/1781387064895758732"><i class="fa fa-twitter" style="font: size 5rem;"></i>twitter</a>
+ </div>
+ 
+ </div>
+ <div class="copyright">copyright @ 2024 by <span>Flavorsphere</span></div>
+ <!-- footer section end -->
+ 
+
+
+
+
+
+
+    <!-- menu section ends -->
+
+
+
+    <script>
+        // احضار زر الإضافة إلى السلة
+        const addToCartBtns = document.querySelectorAll('.cart-btn');
+        
+        // تكرار عبر كل زر إضافة إلى السلة
+        addToCartBtns.forEach(function(btn) {
+          // اضافة استماع للنقر على زر الإضافة إلى السلة
+          btn.addEventListener('click', function(event) {
+            event.preventDefault(); // منع السلوك الافتراضي للرابط
+            const cartItemsContainer = document.querySelector('.cart-items-container');
+            cartItemsContainer.classList.toggle('active'); // تبديل الكلاس active
+            window.location.href = window.location.href + '#cart'; // تحويل المستخدم إلى نفس الصفحة مع العلامة التشعبية #cart
+          });
+        });
+      </script>
+      
+
+
+
+    
+</body>
+</html>
