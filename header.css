@@ -3,21 +3,14 @@
 
 
 :root{
-    --green: #27ae60;
     --black: #192a56;
     --light-color: #666; 
-    --AliceBlue:#f0f8ff;
-    --Blue:#89cff0;
     --whitepink:#ffd5c0;
     --blackpink:#FF748C;
-    --black:#192a56;
-    --light-color: #666;
     --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
     --main-color:#da6285;
     --pink-color:#ff8e9d;
     --pink-opacity:#ffe6e9;
-    --white-alpha-40:rgba(255,255,255,0.40);
-    --white-alpha-25:rgba(255,255,255,0.25);
 } 
 
  *{
@@ -37,7 +30,7 @@ html{
     scroll-behavior: smooth;
 } 
 html::-webkit-scrollbar{
-    width: 8rem;
+    width: 3rem;
 }
 html::-webkit-scrollbar-track{
     background: transparent;
@@ -45,6 +38,10 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: #fff;
     border-radius: 5rem;
+}
+*{
+    scrollbar-width: thin;
+    color: var(--black);
 }
 
  .heart-btn{
@@ -92,7 +89,7 @@ header{
 
 
 header .logo{
-    color: var(--pink-color);
+    color: var(--blackpink);
     font-size: 2.5rem;
     font-weight: bolder;
     display: flex;
@@ -303,6 +300,9 @@ header .heart-items-container .heart-btn{
     text-align: center;
 
 }  
+
+
+
 
 
 
