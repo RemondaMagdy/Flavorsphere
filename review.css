@@ -34,13 +34,14 @@
     }
     .review{
         padding: 50px 0;
+        margin-bottom: 10rem;
     } 
 
 .sub-heading{
     text-align: center;
     font-size: 2rem;
     color: var(--blackpink);
-    padding-top: 1rem;
+    padding-top: 10rem;
     padding-bottom: 1rem;
 }
 
@@ -49,10 +50,13 @@
 
 .review .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
     
     
+}
+  .review::-webkit-scrollbar{
+    width: 0;
 }
     
 
