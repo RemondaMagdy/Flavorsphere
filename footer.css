@@ -1,28 +1,33 @@
-*{background-color: rgb(240, 248, 255);}
-.box-container{
+.box-container-footer {
+    /* background-image: url("./imgs/footer\ background2.jpg"); */
+    background-image: url("imgs/footer\ background2.jpg");
+background-size: cover;
+
+}
+.box-container-footer{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
 }
- .box-container .box h3{
+ .box-container-footer .box h3{
     font-size: 40px;
     color: black;
 }
-.box-container .box p{
+.box-container-footer .box p{
    display: block;
    font-size: 25pX;
    color: black;
-} .box-container .box1 h3{
+} .box-container-footer .box1 h3{
     font-size: 40px;
     color: black;
 }
-.box-container .box1 a{
+.box-container-footer .box1 a{
    display: block;
    font-size: 30pX;
    text-decoration:none;
    color: black;
 }
-.box-container .box1   a:hover{
+.box-container-footer .box1   a:hover{
     color: rgb(137, 207, 240);
     text-decoration: underline;
  }
