@@ -3,14 +3,14 @@
 
 
 :root{
-    --green: #27ae60;
-    --black: #192a56; 
-    --light-color: #666;
-    --AliceBlue:#f0f8ff;
-    --Blue:#89cff0;
-    --PowderBlue:#b0e0e6;
-    --BlackBlue:#87cEEB;
+    --black: #192a56;
+    --light-color: #666; 
+    --whitepink:#ffd5c0;
+    --blackpink:#FF748C;
     --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
 } 
 *{
     font-family:'Nunito',sans-serif ;
@@ -21,14 +21,18 @@
     box-sizing: border-box;
     transition:  .2s linear;
     } 
+    .Appetizers{
+        margin-bottom: 3rem;
+    }
 
 .sub-heading{
 text-align: center;
-font-size: 2rem;
-color: var(--black);
+font-size: 3.5rem;
+color: var(--pink-color);
 padding-top: 1rem;
 padding-bottom: 1rem;
 margin-top: 10rem;
+margin-bottom: 1rem;
 }
 .Appetizers .box-container {
     display:grid;
@@ -72,12 +76,12 @@ margin-top: 10rem;
         border-radius: 50%;
         height: 5rem;width: 5rem;
         line-height: 5rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: var(--black);
     }
     
     .Appetizers .box-container .box .fa-heart:hover{
-        background: var(--Blue);
+        background: var(--pink-color);
         color: #fff;
     }
     
@@ -96,3 +100,19 @@ margin-top: 10rem;
         margin-right: 5rem;
         font-size: 2rem;
     }
+
+    .cart-btn{
+        padding: 1rem 2rem;
+        height: 5rem;width: 5rem;
+        line-height: 5rem;
+        font-size: 1.5rem;
+        background-color:#ff9baa ;
+        color: black;
+        border-radius: 3rem;
+    }
+    .cart-btn:hover{
+        background: #ff697f;
+        
+    }
+    
+    
