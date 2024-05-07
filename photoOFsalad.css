@@ -1,55 +1,131 @@
-.main .cont{
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+:root{
+    --black: #192a56;
+    --light-color: #666; 
+    --whitepink:#ffd5c0;
+    --blackpink:#FF748C;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
+} 
+*{
+    font-family:'Nunito',sans-serif ;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition:  .2s linear;
+    } 
+html{
+    font-size: 62.5%;
+}
+ .main-section{
+     margin: 0 auto; 
+    margin-bottom: 3rem;
+    padding: 3rem 2rem; 
+} 
+
+
+.main-section .cont{
     display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(22rem,5fr));
+    grid-template-columns: repeat(auto-fit ,minmax(30rem,.5fr));
+    gap: 2rem;
 }
-.main{
-    max-width: 1200px;
-    margin: o auto;
-    padding: 3rem 2rem;
-}
-.main .title{
+
+.main-section .title{
+    padding-top: 10rem;
     font-size: 3.5rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
+    color: var(--pink-color);
 }
-.main .cont .gallery{
-    
+.main-section .cont .gallery{
+    padding: 1rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    background-color: white;
-    outline: 0.5rem solid black;
-   padding-bottom: 3rem; 
+    width: 345px;
+  
 }
-.main .cont .gallery img{
-    background-color: white;
-    padding-top: 5rem;
-    width: 25rem;
-    height: 20rem;
-    
+.main-section .cont .gallery img{
+    background-color:#eee;
+    width: 90%;
+    height: 250px;
+    margin:  .5rem 0;
 }
-.main .cont .gallery h3{
+.main-section .cont .gallery img:hover{
+    width: 100%;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+
+.main-section .cont .gallery h3{
     background-color: white;
     font-size: 1.7rem;
     color: black;
     
 }
-.main .cont .gallery .price{
+.main-section .cont .gallery .price{
     background-color: white;
     font-size: 1.5rem;
     color: black;
     
 }
-.main .cont .gallery a{
+.main-section .cont .gallery a{
     text-decoration: none;
     color: black;
     
 }
-.main .cont .gallery :hover{
+.main-section .cont .gallery :hover{
     color: brown;
     
 }
+.main-section .cont .gallery .fa-heart{
+    position: absolute;
+    top: 1rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.main-section .cont .gallery .fa-heart:hover{
+    background: var(--pink-color);
+    color: #fff;
+}
 
 
+.main-section .cont .gallery .fa-heart{
+    right: -15rem;
+}
+.main-section .cont .gallery:hover .fa-heart{
+    right: .5rem;
+} 
 
 
-
+.cart-btn{
+    padding: 1rem 2rem;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    background-color:#ff9baa ;
+    color: black;
+    border-radius: 3rem;
+}
+.cart-btn:hover{
+    background: #ff697f;
+    
+}
