@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./soft-drinks.css"/>
     <link rel="stylesheet" href="./header.css">
-
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -32,7 +33,7 @@
             <li><a href="./appetizers.html">Appetiszers</a></li>
             <li><a href="./DESSERT.htm">Dessert</a></li>
             <li><a href="./soft-drinks.html">Soft Drinks</a></li>
-            <li><a href="./Hot Drinks.html">Hot Drinks</a></li>
+            <li><a href="./hot-drinks.html">Hot Drinks</a></li>
         </ul>   
         </li>
         <li> <a href="./offer1.html">offers</a></li>
@@ -44,7 +45,7 @@
     
     
     <div class="icons">
-          <i class="fas fa-search" id="search-icon"></i>
+      <a href="./searchBar.html"><i class="fas fa-search" id="search-icon"></i></a>
           <a href="#cart" class="fas fa-shopping-cart" id="cart-btn"></a>
           <a href="#heart" class="fas fa-heart" id="heart-btn" ></a>
           <i class="fas fa-bars"  id="menu-bars"></i>
@@ -218,10 +219,68 @@
 
         </div>
 
-        
-
-
      </section>
+
+
+<!-- footer section start -->
+<div class="box-container-footer">
+  <div class="box">
+     <h3>Menu</h3>
+     <p>SOUPS</p>
+     <p>APPETISZERS</p>
+     <p>SALADS</p>
+     <p>DESSERT</p>
+     <p>MAIN DISHES</p>
+     <p>SOFT DRINKS</p>
+     <p>HOT DRINKS</p>
+     
+</li>
+  </div>
+  <div class="box">
+     <div class="main">
+       <h3>Quick links</h3>
+       <p>HOME</p> 
+       <p>MENU</p> 
+       <p>ABOUT US</p> 
+       <p>CONNECT</p> 
+       <p>REVIEW</p> 
+     </div>
+</div>
+<div class="box">
+   <h3>countant info</h3>
+   <p href="#">+0201222225568</p>
+   <p>flaversphere@mail.com</p>
+   <p>30 st.helliobles maser algdida cairo</p>
+
+</div>
+<div class="box1">
+  <h3>follow us</h3>
+  
+  <a href="https://www.facebook.com/profile.php?id=61558409711756&mibextid=ZbWKwL"><i class="fa fa-facebook-square"  style="font: size 5rem;"></i>facebook</a>
+  <a href="https://www.instagram.com/flaversphere?igsh=N2dtb25xdTdxdWZ3"><i class="fa fa-instagram" style="font: size 5rem;" ></i>instgram</a>
+  <a href="https://x.com/flaversphe18305/status/1781387064895758732"><i class="fa fa-twitter" style="font: size 5rem;"></i>twitter</a>
+</div>
+
+</div>
+<div class="copyright">copyright @ 2024 by <span>Flavorsphere</span></div>
+<!-- footer section end -->
+<script>
+  // احضار زر الإضافة إلى السلة
+  const addToCartBtns = document.querySelectorAll('.cart-btn');
+  
+  // تكرار عبر كل زر إضافة إلى السلة
+  addToCartBtns.forEach(function(btn) {
+    // اضافة استماع للنقر على زر الإضافة إلى السلة
+    btn.addEventListener('click', function(event) {
+      event.preventDefault(); // منع السلوك الافتراضي للرابط
+      const cartItemsContainer = document.querySelector('.cart-items-container');
+      cartItemsContainer.classList.toggle('active'); // تبديل الكلاس active
+      window.location.href = window.location.href + '#cart'; // تحويل المستخدم إلى نفس الصفحة مع العلامة التشعبية #cart
+    });
+  });
+</script>
+
+
 </body>
 </html>
             
