@@ -3,14 +3,14 @@
 
 
 :root{
-    --green: #27ae60;
-    --black: #192a56; 
-    --light-color: #666;
-    --AliceBlue:#f0f8ff;
-    --Blue:#89cff0;
-    --PowderBlue:#b0e0e6;
-    --BlackBlue:#87cEEB;
+    --black: #192a56;
+    --light-color: #666; 
+    --whitepink:#ffd5c0;
+    --blackpink:#FF748C;
     --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
 } 
 *{
     font-family:'Nunito',sans-serif ;
@@ -27,12 +27,13 @@ html{
 .soups{
     margin: 0 auto;
    padding: 3rem 2rem;
+   margin-bottom: 3rem;
 }
 
 .sub-heading{
     text-align: center;
     font-size: 3.5rem;
-    color: var(--black);
+    color: var(--blackpink);
     padding-top: 10rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
@@ -90,7 +91,7 @@ html{
 }
 
 .soups .box-container .box .fa-heart:hover{
-    background: var(--Blue);
+    background: var(--pink-color);
     color: #fff;
 }
 
@@ -107,14 +108,7 @@ html{
     color: var(--black);
     font-size: 2rem;
 }
-.soups .box-container .box .stars{
-    padding: 1rem  0;
-}
 
-.soups .box-container .box .stars i{
-    font-size: 1rem;
-    color: gold;
-}
 
 .soups .box-container .box span{
     color:var(--black);
@@ -122,3 +116,20 @@ html{
     margin-right: 5rem;
     font-size: 2rem;
 }
+
+
+
+.cart-btn{
+    padding: 1rem 2rem;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    background-color:#ff9baa ;
+    color: black;
+    border-radius: 3rem;
+}
+.cart-btn:hover{
+    background: #ff697f;
+    
+}
+
