@@ -8,6 +8,8 @@
     border: 20px solid rgba(0,0,0,.2);
     box-shadow: 5px 5px #ffe6e9;
     height: auto;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
 }
 .order form .inputbox{
     display: flex;
