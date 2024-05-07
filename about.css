@@ -1,21 +1,15 @@
-  :root{
+:root{
     
-    --green: #27ae60;
+   
     --black: #192a56;
-    --light-color: #666; 
-    --AliceBlue:#f0f8ff;
-    --Blue:#89cff0;
     --whitepink:#FEF8F3;
     --blackpink:#FF748C;
-    --black:#192a56;
     --second-color: rgb(219, 186, 136);
     --light-color: #666;
     --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
     --main-color:#da6285;
     --pink-color:#ff8e9d;
     --pink-opacity:#ffe6e9;
-    --white-alpha-40:rgba(255,255,255,0.40);
-    --white-alpha-25:rgba(255,255,255,0.25);
 } 
 *{
     font-family:'Nunito',sans-serif ;
@@ -35,19 +29,16 @@
     padding-bottom: 1rem;
 }
 .container {
-
-
 max-width: 1100px;
 margin: auto;
-
+margin-bottom: 10rem;
 
 }
 #about{
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#ffe6e9 ;
 }
 #about .title{
     text-align: center;
@@ -69,8 +60,8 @@ margin: auto;
     display: flex;
     justify-content: space-between;
 }
-#about .about-content img{
-     width: 325px;
+#about .about-content video{
+     width: 500px;
      
 }
 #about .about-content h3{
