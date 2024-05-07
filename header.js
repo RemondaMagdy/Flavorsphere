@@ -42,7 +42,7 @@ window.onscroll = () =>{
 const checkoutBtn = document.getElementById('checkout-btn');
 checkoutBtn.addEventListener('click',function(event){
     event.preventDefault();
-    window.location.href='#order';
+    window.location.href='./order section.html';
     const cartItem = document.querySelector('.cart-items-container');
     cartItem.classList.remove('active');
 
@@ -60,3 +60,50 @@ addtocartBtn.addEventListener('click',function(event){
 
 
 });
+
+const AddToCart = document.querySelector('.cart-btn');
+addtocartBtn.addEventListener('click',function(event){
+    event.preventDefault();
+    window.location.href='#cart';
+    const cartItem = document.querySelector('.cart-items-container');
+    cartItem.classList.add('active');
+
+});
+
+
+
+// const toggle = document .getElementById('white-mood');
+// const body =document.querySelector('body');
+// white.addEventListener('click',function() {
+// this.classList.toggle('bi-dark');
+// if(this.classList.toggle('fas fa-sun')){
+//     body.style.background = 'white';
+// body.style.color = 'black';
+// body.style.transition = '2s'
+// }
+// else{
+//     body.style.background = 'black';
+//     body.style.color = 'white';
+//     body.style.transition = '2s'
+// }
+// })
+
+const toggle = document.getElementById('white-mood');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function() {
+    toggle.classList.toggle('bi-dark');
+    if (toggle.classList.contains('bi-dark')) {
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '2s';
+    } else {
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }
+});
+
+
+
+
