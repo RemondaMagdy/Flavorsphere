@@ -12,10 +12,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="./menu.css">
   <title>home</title>
+  <style>#loader {
+  
+    position: absolute;
+     left: 40%;
+     top: 50%;
+     z-index: 1;
+   
+     margin: -5rem 0 0 -5rem;
+    
+   }</style>
 
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="loader"> 
+        <img src="D:\CLARA\flavosphere\photos\loder.gif">
+      </div>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
 
 
 <!-- header start -->
@@ -851,7 +865,17 @@
 <div class="copyright">copyright @ 2024 by <span>Flavorsphere</span></div>
 <!-- footer section end -->
 
-
+<script>
+  
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 
 </body>
 </html>
