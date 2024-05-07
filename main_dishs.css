@@ -3,14 +3,14 @@
 
 
 :root{
-    --green: #27ae60;
-    --black: #192a56; 
-    --light-color: #666;
-    --AliceBlue:#f0f8ff;
-    --Blue:#89cff0;
-    --PowderBlue:#b0e0e6;
-    --BlackBlue:#87cEEB;
+    --black: #192a56;
+    --light-color: #666; 
+    --whitepink:#ffd5c0;
+    --blackpink:#FF748C;
     --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+    --main-color:#da6285;
+    --pink-color:#ff8e9d;
+    --pink-opacity:#ffe6e9;
 } 
 *{
     font-family:'Nunito',sans-serif ;
@@ -22,7 +22,9 @@
     transition:  .2s linear;
     } 
 
-
+.main_dishs{
+    margin-bottom: 3rem;
+}
 
 .sub-heading {
     text-align: center;
@@ -38,7 +40,7 @@
     gap: 2rem;
 }
 
-.box {
+.box-container .box {
     padding: 1rem;
     background: #fff;
     border: .1rem  solid rgba(0,0,0,.2);
@@ -74,18 +76,21 @@
     margin-right: 8rem;
 }
 
-.cart-btn {
-    background-color: #FF748C;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
+.cart-btn{
+    padding: 1rem 2rem;
+    height: 5rem;width: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    background-color:#ff9baa ;
+    color: black;
+    border-radius: 3rem;
+}
+.cart-btn:hover{
+    background: #ff697f;
+    
 }
 
-.cart-btn:hover {
-    background-color: #DA6285;
-}
+
 
 .main_dishs .box-container .box a.fa-heart{
     position: absolute;
@@ -98,7 +103,7 @@
 }
 
  .main_dishs .box-container .box a.fa-heart:hover{ 
-    background: var(--Blue);
+    background: var(--pink-color);
     color: #fff;
 }
 
